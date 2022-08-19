@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+}
+
+nav {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
