@@ -1,30 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore CMS
 
-> Description the project.
+> A single page app to manage books. You can add books to your collection or remove them. You can find information about ab book's detail such as its genre. And the best feature is you can keep track of your progress on each book in your collection.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
 
-## Live Demo (if available)
+<!-- ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://livedemo.com) -->
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+- Copy this link `git@github.com:bengigo/bookstore.git`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git@github.com:bengigo/bookstore.git`.
+- Go to the repository folder in your command prompt `cd bookstore`.
+- Run `npm install` to install the dev dependencies for linters.
 
-### Prerequisites
+<!-- ### Prerequisites
 
 ### Setup
 
@@ -34,23 +34,22 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
-### Deployment
+### Deployment -->
 
 
 
-## Authors
+<!-- ## Authors -->
 
-👤 **Author1**
+👤 **Author**
+
+- GitHub: [@bengigo](https://github.com/bengigo)
+- [LinkedIn](https://www.linkedin.com/in/bengi-g-03b883199/)
+
+<!-- 👤 **Author2**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
 ## 🤝 Contributing
 
