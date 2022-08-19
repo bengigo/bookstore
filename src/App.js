@@ -3,7 +3,6 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Books from './components/Books';
 import Categories from './components/Categories';
 import Header from './components/Header';
-import Form from './components/Form';
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
         <Route path="/" element={<Books />} />
         <Route path="/categories" element={<Categories />} />
       </Routes>
-      <Form />
     </BrowserRouter>
   );
 }
