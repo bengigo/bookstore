@@ -4,12 +4,17 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  margin: 10px;
   padding: 0;
 }
 
 header {
-    background-color: pink;
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
+}
+
+nav {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
 }
