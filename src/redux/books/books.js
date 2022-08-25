@@ -1,19 +1,9 @@
-import { v4 as uuidv4 } from 'uuid';
+const baseUrl =
+  "https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/RSJKbUfjBsG314btnaA5";
 
-const ADD_BOOK = 'bookstore/books/ADD_BOOK';
-const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
-const initialState = [
-  {
-    id: uuidv4(),
-    title: 'The Stranger',
-    author: 'Albert Camus',
-  },
-  {
-    id: uuidv4(),
-    title: 'Les Miserables',
-    author: 'Victor Hugo',
-  },
-];
+const ADD_BOOK = "bookstore/books/ADD_BOOK";
+const REMOVE_BOOK = "bookstore/books/REMOVE_BOOK";
+const DISPLAY_BOOK = "bookstore/books/BOOK_DISPLAYED";
 
 export function addBook(book) {
   return {
@@ -29,12 +19,28 @@ export function removeBook(index) {
   };
 }
 
-export default function bookReducer(state = initialState, action) {
+export function displayBook() {
+  return {
+    type: DISPLAY_BOOK,
+    data,
+  };
+}
+
+export function fetchBook() {
+  return dispatch => {
+      fetch(`${baseUrl}/books`)
+      .then((response) => response.json())
+  }
+}
+
+export default function bookReducer(state = {}, action) {
   switch (action.type) {
-    case ADD_BOOK:
-      return [...state, action.payload];
-    case REMOVE_BOOK:
-      return [...state.filter((book) => book.id !== action.payload.id)];
+    case DISPLAY_BOOK:
+      return action.data;
+    // case ADD_BOOK:
+    //   return [...state, action.payload];
+    // case REMOVE_BOOK:
+    //   return [...state.filter((book) => book.id !== action.payload.id)];
     default:
       return state;
   }
