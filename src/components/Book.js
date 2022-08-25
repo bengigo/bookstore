@@ -21,7 +21,6 @@ const Book = () => {
           </button>
         </li>
       ))}
-      {' '}
     </ul>
   );
 };
