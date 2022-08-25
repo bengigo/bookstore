@@ -10,12 +10,7 @@ const Form = () => {
 
   const handleForm = (e) => {
     e.preventDefault();
-    const newBook = {
-      id: uuidv4(),
-      title,
-      author,
-    };
-    dispatch(addBook(newBook));
+    dispatch(addBook(uuidv4(), title, author));
     setBook({
       title: '',
       author: '',

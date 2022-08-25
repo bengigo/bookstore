@@ -1,6 +1,6 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { removeBook } from "../redux/books/books";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const Book = () => {
   const data = useSelector((state) => state.books);
@@ -20,7 +20,8 @@ const Book = () => {
             Remove
           </button>
         </li>
-      ))}{" "}
+      ))}
+      {' '}
     </ul>
   );
 };

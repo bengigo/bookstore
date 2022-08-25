@@ -1,16 +1,15 @@
-const baseUrl =
-  "https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/RSJKbUfjBsG314btnaA5";
+const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/RSJKbUfjBsG314btnaA5';
 
-const ADD_BOOK = "bookstore/books/ADD_BOOK";
-const REMOVE_BOOK = "bookstore/books/REMOVE_BOOK";
-const DISPLAY_BOOK = "bookstore/books/BOOK_DISPLAYED";
+// const ADD_BOOK = "bookstore/books/ADD_BOOK";
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
+const DISPLAY_BOOK = 'bookstore/books/BOOK_DISPLAYED';
 
-export function addBook(book) {
-  return {
-    type: ADD_BOOK,
-    payload: book,
-  };
-}
+// export function addBook(book) {
+//   return {
+//     type: ADD_BOOK,
+//     payload: book,
+//   };
+// }
 
 export function removeBook(index) {
   return {
@@ -27,10 +26,43 @@ export function displayBook() {
 }
 
 export function fetchBook() {
-  return dispatch => {
-      fetch(`${baseUrl}/books`)
-      .then((response) => response.json())
-  }
+  return (dispatch) => {
+    fetch(`${baseUrl}/books`).then((response) => response.json());
+  };
+}
+
+// export const addBook =
+//   (id, title, author, category = "-") =>
+//   (dispatch) => {
+//     fetch(`${baseUrl}/books`, {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         item_id: id,
+//         title,
+//         author,
+//         category,
+//       }),
+//     }).then(() => dispatch(fetchBook()));
+//   };
+
+export function addBook(id, title, author, category = '-') {
+  return (dispatch) => {
+    fetch(`${baseUrl}/books`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        item_id: id,
+        title,
+        author,
+        category,
+      }),
+    }).then(() => dispatch(fetchBook()));
+  };
 }
 
 export default function bookReducer(state = {}, action) {
