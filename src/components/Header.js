@@ -6,8 +6,15 @@ const Header = () => (
   <header>
     <h1>Bookstore CMS</h1>
     <nav>
-      <Link className="books" to="/">BOOKS</Link>
-      <Link className="categories" to="/categories">CATEGORIES</Link>
+      <div className="links">
+        <Link className="books" to="/">
+          BOOKS
+        </Link>
+        <Link className="categories" to="/categories">
+          CATEGORIES
+        </Link>
+      </div>
+      <span className="material-symbols-outlined user">person</span>
     </nav>
   </header>
 );

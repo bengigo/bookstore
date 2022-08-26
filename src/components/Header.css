@@ -13,6 +13,12 @@ nav {
   display: flex;
   margin-left: 2.938rem;
   align-items: center;
+  justify-content: space-between;
+}
+
+.user {
+  color: #0290ff;
+  margin-right: 6.25rem;
 }
 
 h1 {
