@@ -6,8 +6,8 @@ const Header = () => (
   <header>
     <h1>Bookstore CMS</h1>
     <nav>
-      <Link className="books" to="/">Books</Link>
-      <Link className="categories" to="/categories">Categories</Link>
+      <Link className="books" to="/">BOOKS</Link>
+      <Link className="categories" to="/categories">CATEGORIES</Link>
     </nav>
   </header>
 );
