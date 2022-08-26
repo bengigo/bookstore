@@ -11,8 +11,6 @@ nav {
   width: 10%;
   height: auto;
   display: flex;
-
-  /* justify-content: space-around; */
   margin-left: 2.938rem;
   align-items: center;
 }
