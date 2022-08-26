@@ -1,4 +1,3 @@
-import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
